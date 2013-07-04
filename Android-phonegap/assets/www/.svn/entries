@@ -1,0 +1,210 @@
+10
+
+dir
+0
+https://nunki.ingeneo.biz:9443/svn/Ingeneo/Feria-de-las-Flores-2013/Android-phonegap/assets/www
+https://nunki.ingeneo.biz:9443/svn/Ingeneo
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18116136-6a85-d54b-bc94-6f39c5780367
+
+Default@2x.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+.project
+file
+
+
+
+add
+
+www
+dir
+
+
+
+add
+
+css
+dir
+
+
+
+add
+
+fonts
+dir
+
+
+
+add
+
+cordova-bb.js
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+res
+dir
+
+
+
+add
+
+spec
+dir
+
+
+
+add
+
+cordova
+dir
+
+
+
+add
+
+config.xml
+file
+
+
+
+add
+
+cordova_plugins.json
+file
+
+
+
+add
+
+FeriaDeFlores.xcodeproj
+dir
+
+
+
+add
+
+calendar-2.xml
+file
+
+
+
+add
+
+Default.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+cordova.js
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+calendar.xml
+file
+
+
+
+add
+
+Default-568h@2x.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+FeriaDeFlores
+dir
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+img
+dir
+
+
+
+add
+
+js
+dir
+
+
+
+add
+

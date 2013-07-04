@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Aplicación informativa acerca de los eventos de la feria de 
+    las flores, de la ciudad de medellín-colombia.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" href="js/lib/jquery.mobile.structure-1.3.1.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>Feria de las flores</title>
+    </head>
+    <body>
+   <!-- 	<div id="splash-screen"></div>-->
+        <div id="site-background"></div>
+		<!-- La flor con los links a las páginas internas. -->
+		<div id="home-nav-menu-wrapper" data-role="navbar">
+			<div class="home-nav-menu">
+				<div class="menu-link" target="#calendar"></div>
+				<div class="menu-link" target="#medellin-offers"></div>
+				<div class="menu-link" target="#maps"></div>
+				<div class="menu-link" target="#news"></div>
+				<div class="menu-petals"></div>
+			</div>
+		</div>
+		<div data-role="page" id="home" index="0">
+
+			<div data-role="header">
+				
+			</div><!-- /header -->
+			<div data-role="footer">
+				
+			</div><!-- /footer -->
+		</div><!-- /page -->
+
+		<!-- Events list page -->
+		<div data-role="page" id="calendar" index="1">
+
+			<div data-role="header">
+				<!-- La barra de navegación. -->
+				<h2>Calendario</h2>
+			</div><!-- /header -->
+
+			<div data-role="content">
+				<!--<div class="screenshot"></div>-->
+				<div class="calendar-wrapper">
+						<div id="calendar-events-wrapper">
+							<div>
+								<div class="events-date">3 de agosto</div>
+								<div class="event-description">Desfile Infantil de Silleteros</div>
+							</div>
+							<div>
+								<div class="events-date">2,3 y 9 de agosto</div>
+								<div class="event-description">Festival Nacional de la Trova</div>
+							</div>
+							<div>
+								<div class="events-date">3 y 4 de agosto</div>
+								<div class="event-description">Zona que Suena</div>
+							</div>
+							<div>
+								<div class="events-date">3, 4, 6, 7, 8 y 9 de agosto</div>
+								<div class="event-description">Parque Cultural Nocturno</div>
+							</div>
+						</div>
+				</div>
+				<a href="javascript: window.history.back()" class="back-button"></a>
+				<a href="javascript: window.history.back()" class="share-button"></a>
+			</div><!-- /content -->
+
+			<div data-role="footer">
+				<!-- La flor interna. -->
+			</div><!-- /footer -->
+		</div><!-- /page -->
+		<div data-role="page" id="medellin-offers" index="2">
+
+			<div data-role="header">
+				<!-- La barra de navegación. -->
+				<h2>Medellín te ofrece</h2>
+			</div><!-- /header -->
+
+			<div data-role="content">
+				<!-- <div class="screenshot"></div> -->
+				<div class="content-wrapper">
+<!--					<iframe src="https://www.google.com/calendar/embed?title=Feria%20de%20las%20Flores&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=400&amp;wkst=2&amp;hl=es_419&amp;bgcolor=%23ffffff&amp;src=gustavopelaezrpo%40gmail.com&amp;color=%23A32929&amp;src=rk1i4t3cfbi4ahk7gat6f1poso%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FBogota&dates=amp;20100717%2F20100717" 
+					style=" border-width:0 " width="100%" height="100%" frameborder="0" scrolling="no"></iframe>-->
+				</div>
+				<a href="javascript: window.history.back()" class="back-button"></a>
+			</div><!-- /content -->
+
+			<div data-role="footer">
+				<!-- La flor interna. -->
+			</div><!-- /footer -->
+		</div><!-- /page -->
+		<div data-role="page" id="news" index="3">
+
+			<div data-role="header">
+				<!-- La barra de navegación. -->
+				<h2>Noticias</h2>
+			</div><!-- /header -->
+
+			<div data-role="content">
+				<div class="screenshot"></div>
+				<a href="javascript: window.history.back()" class="back-button"></a>
+			</div><!-- /content -->
+
+			<div data-role="footer">
+				<!-- La flor interna. -->
+			</div><!-- /footer -->
+		</div><!-- /page -->
+		<div data-role="page" id="maps" index="4">
+
+			<div data-role="header">
+				<!-- La barra de navegación. -->
+				<h2>Mapas</h2>
+			</div><!-- /header -->
+
+			<div data-role="content">
+				<div class="screenshot"></div>
+				<a href="javascript: window.history.back()" class="back-button"></a>
+			</div><!-- /content -->
+
+			<div data-role="footer">
+				<!-- La flor interna. -->
+			</div><!-- /footer -->
+		</div><!-- /page -->
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<!--	<script type="text/javascript" charset="utf-8" src="js/lib/GCMPlugin.js"></script>
+-->		
+		<script type="text/javascript" charset="utf-8" src="js/lib/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/lib/jquery.mobile-1.3.1.min.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			window.settings = {
+				beginDate: '20100717',
+				endDate: '20100719',
+				calendar: 'gustavopelaezrpo%40gmail.com'
+			}
+			initialize();
+		</script>
+    </body>
+</html>

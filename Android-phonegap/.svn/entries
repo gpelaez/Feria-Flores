@@ -1,0 +1,119 @@
+10
+
+dir
+0
+https://nunki.ingeneo.biz:9443/svn/Ingeneo/Feria-de-las-Flores-2013/Android-phonegap
+https://nunki.ingeneo.biz:9443/svn/Ingeneo
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18116136-6a85-d54b-bc94-6f39c5780367
+
+project.properties
+file
+
+
+
+add
+
+assets
+dir
+
+
+
+add
+
+local.properties
+file
+
+
+
+add
+
+proguard-project.txt
+file
+
+
+
+add
+
+AndroidManifest.xml
+file
+
+
+
+add
+
+src
+dir
+
+
+
+add
+
+bin
+dir
+
+
+
+add
+
+gen
+dir
+
+
+
+add
+
+libs
+dir
+
+
+
+add
+
+res
+dir
+
+
+
+add
+
+ant.properties
+file
+
+
+
+add
+
+cordova
+dir
+
+
+
+add
+
+build.xml
+file
+
+
+
+add
+

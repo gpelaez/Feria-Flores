@@ -1,0 +1,244 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+body {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+#site-background {
+	background: url(../img/background-home.png);
+	background-size: cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+#splash-screen {
+	background: url(../res/splash.png);
+	background-size: cover;
+	background-position: center center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+#home-nav-menu-wrapper {
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+	height: 309px;
+	margin-top: -155px;
+	left: 0;
+	top: 100%;
+	transition: transform 1s;
+	-webkit-transition: -webkit-transform 1s;
+	transform: translate3d(0,50px,0);
+	-webkit-transform: translate3d(0,50px,0);
+}
+.menu-petals {
+	background-image: url(../img/petalos_menu.png);
+	width: 320px;
+	height: 383px;
+	margin-left: -160px;
+	margin-top: -192px;
+	z-index: 5;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: transform 1s;
+	-webkit-transition: -webkit-transform 1s;
+	transform: rotateZ(0deg) scale3d(0,0,0);
+	-webkit-transform: rotateZ(0deg) scale3d(0,0,0);
+}
+.home .menu-petals {
+	transform: rotateZ(360deg) scale3d(1,1,1);
+	-webkit-transform: rotateZ(360deg) scale3d(1,1,1);
+}
+.menu-out {
+	transform: rotate(0deg) translate3d(0,0,0);
+	-ms-transform: rotate(0deg) translate3d(0,0,0); /* IE 9 */
+	-webkit-transform: rotate(0deg) translate3d(0,0,0); /* Safari and Chrome */
+}
+.menu-in {
+	transform: rotate(360deg) translate3d(50%,0,0);
+	-ms-transform: rotate(360deg) translate3d(50%,0,0); /* IE 9 */
+	-webkit-transform: rotate(360deg) translate3d(50%,0,0); /* Safari and Chrome */
+}
+
+.home-nav-menu {
+	width: 320px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	background: url(../img/flor_menu.png) no-repeat;
+	background-size: contain;
+}
+.menu-link {
+	width: 67px;
+	height: 55px;
+	display: inline-block;
+	z-index: 10;
+}
+.home-nav-menu .ui-link {
+	width: 67px;
+	height: 55px;
+}
+
+[target="#calendar"].menu-link {
+	background-image: url(../img/icons/icon_calendario.png);
+	background-size: cover;
+}
+[target="#medellin-offers"].menu-link {
+	background-image: url(../img/icons/icon_medellinOfrece.png);
+	background-size: cover;
+}
+[target="#maps"].menu-link {
+	background-image: url(../img/icons/icon_maps.png);
+	background-size: cover;
+}
+[target="#news"].menu-link {
+	background-image: url(../img/icons/icon_news.png);
+	background-size: cover;
+}
+
+[target="#calendar"].menu-link:hover {
+	background-image: url(../img/icons/icon_calendario_001.png);
+}
+[target="#medellin-offers"].menu-link:hover {
+	background-image: url(../img/icons/icon_medellinOfrece_001.png);
+}
+[target="#maps"].menu-link:hover {
+	background-image: url(../img/icons/icon_maps_001.png);
+}
+[target="#news"].menu-link:hover {
+	background-image: url(../img/icons/icon_news_001.png);
+}
+
+.home-nav-menu .menu-link:nth-child(1) {
+	position: absolute;
+	top: 5%;
+	left: 20%;
+}
+.home-nav-menu .menu-link:nth-child(2) {
+	position: absolute;
+	top: 5%;
+	left: 57%;
+}
+.home-nav-menu .menu-link:nth-child(3) {
+	position: absolute;
+	top: 74%;
+	left: 20%;
+}
+.home-nav-menu .menu-link:nth-child(4) {
+	position: absolute;
+	top: 74%;
+	left: 57%;
+}
+
+.screenshot {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	width: 100%;
+	min-height: 100%;
+}
+.back-button {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 33px;
+	height: 33px;
+	background: url(../img/icons/icon_back.png) no-repeat;
+	background-size: cover;
+	margin: 5px;
+}
+.share-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 45px;
+	height: 32px;
+	background: url(../img/icons/icon_share.png) no-repeat;
+	background-size: cover;
+	margin: 5px;
+}
+
+#calendar .screenshot {
+	background-image: url(../img/screenshots/calendario.png);
+}
+#maps .screenshot {
+	background-image: url(../img/screenshots/mapa.png);
+}
+#medellin-offers .screenshot {
+	background-image: url(../img/screenshots/medellinTeOfrece.png);
+}
+#news .screenshot {
+	background-image: url(../img/screenshots/noticias.png);
+}
+
+h2 {
+	
+	font-family: sans-serif;
+	white-space: pre-wrap !important;
+	color: #cd2045;
+	text-transform: capitalize;
+	margin-bottom: 0;
+}
+[data-role="header"] {
+	margin-top: 40px;
+}
+[data-role="content"] {
+	padding-top: 0;
+}
+.content-wrapper {
+	position: relative;
+	height: 350px;
+}
+
+.calendar-wrapper {
+	width: 256px;
+	height: 271px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	color: #fff;
+	-webkit-mask-image: url(../img/mask_calendar.png);
+	-webkit-mask-size: 100% 100%;
+	background: #e83e48; /* Old browsers */
+	background: -moz-linear-gradient(top, #e83e48 0%, #ee5a58 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e83e48), color-stop(100%,#ee5a58)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #e83e48 0%,#ee5a58 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #e83e48 0%,#ee5a58 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #e83e48 0%,#ee5a58 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #e83e48 0%,#ee5a58 100%); /* W3C */
+	/*    -webkit-mask: url('../img/mask_calendar.png') top left / cover;
+	 -o-mask: url('../img/mask_calendar.png') top left / cover;
+	 -ms-mask: url('../img/mask_calendar.png') top left / cover;
+	 */
+	background-color: #666666;
+	
+	color: #f9e9c7;
+	margin: 0 auto;
+	
+}
+.calendar-wrapper .event-description, .calendar-wrapper .events-date{
+	padding: 0 20px;
+}
+.calendar-wrapper .events-date {
+	font-size: 15px;
+}
+.calendar-wrapper .event-description {
+	background-color: rgba(205,35,69,0.6);
+	font-size: 17px;
+}
+
